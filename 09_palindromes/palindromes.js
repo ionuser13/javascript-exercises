@@ -1,13 +1,13 @@
 const palindromes = function (str) {
     let regEx = /[^a-z]/g;
-    let modStr = str
+    let modifiedStr = str
         .toLowerCase()
         .replace(regEx, "");
-    let reverseStr = modStr
+    let reverseStr = modifiedStr
         .split("")
         .reverse()
         .join("");
-    return reverseStr == modStr
+    return reverseStr == modifiedStr
 };
 
 // Do not edit below this line
